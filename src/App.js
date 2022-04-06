@@ -1,5 +1,5 @@
 import "./App.css";
-import { Title } from "./components";
+import { Title, Tag } from "./components";
 
 function App() {
   return (
@@ -15,13 +15,11 @@ function App() {
                 alt=""
               />
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2">
               <h2 className="flex gap-2 font-bold items-center text-md">
                 <span>胡润融</span>
                 <span>Wilson Wu</span>
-                <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                  1997
-                </span>
+                <Tag>1997</Tag>
               </h2>
               <p className="text-gray-500 font-light text-sm text-md">
                 <span>广州大学</span>
@@ -77,13 +75,7 @@ function App() {
                   <div className="flex gap-4">
                     <h2 className="text-md font-bold">Kanar Profiles</h2>
                     <div>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        2019-07
-                      </span>
-                      -
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        2021-05
-                      </span>
+                      <Tag>2019-07 </Tag> - <Tag>2021-05</Tag>
                     </div>
                   </div>
                   <p className="text-sm flex gap-2">
@@ -104,18 +96,10 @@ function App() {
                     <h2 className="text-sm font-bold">voice-to-text</h2>
                     <p className=" text-sm text-gray-500">语音转文字功能</p>
                     <div className="flex gap-2 flex-wrap">
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        jQuery
-                      </span>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        Bootstrap
-                      </span>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        python
-                      </span>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        Django
-                      </span>
+                      <Tag>jQuery</Tag>
+                      <Tag>Bootstrap</Tag>
+                      <Tag>python</Tag>
+                      <Tag>Django</Tag>
                     </div>
                   </div>
                   <div className="border p-4 rounded-md flex flex-col gap-1">
@@ -124,9 +108,7 @@ function App() {
                       Decipher子项目构建工具
                     </p>
                     <div className="flex gap-2 flex-wrap">
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        nodejs
-                      </span>
+                      <Tag>nodejs</Tag>
                     </div>
                   </div>
                 </div>
@@ -136,27 +118,13 @@ function App() {
                     Decipher链接生成和记录
                   </p>
                   <div className="flex gap-2 flex-wrap">
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      vue
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      vue-router
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      vuex
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      sass
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      tailwind
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      element-ui
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      cloud-base
-                    </span>
+                    <Tag>vue</Tag>
+                    <Tag>vue-router</Tag>
+                    <Tag>vuex</Tag>
+                    <Tag>sass</Tag>
+                    <Tag>tailwind</Tag>
+                    <Tag>element-ui</Tag>
+                    <Tag>cloud-base</Tag>
                   </div>
                 </div>
               </div>
@@ -171,13 +139,7 @@ function App() {
                       广东马上信息科技有限公司
                     </h2>
                     <div>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        2021-05
-                      </span>
-                      -
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        至今
-                      </span>
+                      <Tag>2021-05</Tag> - <Tag>至今</Tag>
                     </div>
                   </div>
                   <p className="text-sm flex gap-2">
@@ -206,12 +168,8 @@ function App() {
                       基于Nuxt的SSR项目，主要难点是日历组件的开发
                     </p>
                     <div className="flex gap-2 flex-wrap">
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        lerna
-                      </span>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        nuxt
-                      </span>
+                      <Tag>lerna</Tag>
+                      <Tag>nuxt</Tag>
                     </div>
                   </div>
                   <div className="border p-4 rounded-md flex flex-col gap-1">
@@ -224,24 +182,12 @@ function App() {
                       主要负责其中直播业务的内容，包括设置，报表，卡片等等
                     </p>
                     <div className="flex gap-2 flex-wrap">
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        vue
-                      </span>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        vue-router
-                      </span>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        vuex
-                      </span>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        sass
-                      </span>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        element-ui
-                      </span>
-                      <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                        i18n
-                      </span>
+                      <Tag>vue</Tag>
+                      <Tag>vue-router</Tag>
+                      <Tag>vuex</Tag>
+                      <Tag>sass</Tag>
+                      <Tag>element-ui</Tag>
+                      <Tag>i18n</Tag>
                     </div>
                   </div>
                 </div>
@@ -257,33 +203,15 @@ function App() {
                     流功能主要通过 mpegts.js & TRTC 实现
                   </p>
                   <div className="flex gap-2 flex-wrap">
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      lerna
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      vue
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      vue-router
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      vuex
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      sass
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      canvas
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      element-ui
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      mpegts.js
-                    </span>
-                    <span className="font-light bg-gray-300 rounded-full px-2 text-sm">
-                      TRTC
-                    </span>
+                    <Tag>lerna</Tag>
+                    <Tag>vue</Tag>
+                    <Tag>vue-router</Tag>
+                    <Tag>vuex</Tag>
+                    <Tag>sass</Tag>
+                    <Tag>canvas</Tag>
+                    <Tag>element-ui</Tag>
+                    <Tag>mpegts.js</Tag>
+                    <Tag>TRTC</Tag>
                   </div>
                 </div>
               </div>
