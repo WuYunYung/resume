@@ -1,5 +1,5 @@
 import "./App.css";
-import { Title, Tag } from "./components";
+import { Title, Tag, ProjectCard } from "./components";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
           <Title>个人信息</Title>
 
           <div className="flex gap-4">
-            <div className="w-28 rounded overflow-hidden ">
+            <div className="w-24 h-24 rounded-full overflow-hidden ">
               <img
                 src="https://avatars.githubusercontent.com/u/43036689?v=4"
                 alt=""
@@ -26,10 +26,6 @@ function App() {
                 <span>计算机科学与技术</span>
                 <span>本科</span>
               </p>
-              <ul className="flex flex-col gap-2 text-md">
-                <li>工作年限: 2年</li>
-                <li>期望职位: 前端开发工程师</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -45,10 +41,6 @@ function App() {
               <li>
                 <h2 className="font-bold">WeChat:</h2>
                 <p>13265388679</p>
-              </li>
-              <li>
-                <h2 className="font-bold">QQ:</h2>
-                <p>281692231</p>
               </li>
             </ul>
             <ul className="flex flex-col gap-2">
@@ -92,41 +84,23 @@ function App() {
               </div>
               <div className="flex flex-col gap-2">
                 <div className="grid grid-cols-2 gap-2">
-                  <div className="border p-4 rounded-md flex flex-col gap-1">
-                    <h2 className="text-sm font-bold">voice-to-text</h2>
-                    <p className=" text-sm text-gray-500">语音转文字功能</p>
-                    <div className="flex gap-2 flex-wrap">
-                      <Tag>jQuery</Tag>
-                      <Tag>Bootstrap</Tag>
-                      <Tag>python</Tag>
-                      <Tag>Django</Tag>
-                    </div>
-                  </div>
-                  <div className="border p-4 rounded-md flex flex-col gap-1">
-                    <h2 className="text-sm font-bold">survey-cli</h2>
-                    <p className="text-sm text-gray-500">
-                      Decipher子项目构建工具
-                    </p>
-                    <div className="flex gap-2 flex-wrap">
-                      <Tag>nodejs</Tag>
-                    </div>
-                  </div>
+                  <ProjectCard
+                    title="voice-to-text"
+                    tags={["jQuery", "Bootstrap", "python", "Django"]}
+                  >
+                    语音转文字功能
+                  </ProjectCard>
+                  <ProjectCard title="survey-cli" tags={["nodejs"]}>
+                    Decipher子项目构建工具
+                  </ProjectCard>
                 </div>
-                <div className="border p-4 rounded-md flex flex-col gap-1">
-                  <h2 className="text-sm font-bold">link-generator</h2>
-                  <p className="text-sm text-gray-500">
-                    Decipher链接生成和记录
-                  </p>
-                  <div className="flex gap-2 flex-wrap">
-                    <Tag>vue</Tag>
-                    <Tag>vue-router</Tag>
-                    <Tag>vuex</Tag>
-                    <Tag>sass</Tag>
-                    <Tag>tailwind</Tag>
-                    <Tag>element-ui</Tag>
-                    <Tag>cloud-base</Tag>
-                  </div>
-                </div>
+                <ProjectCard
+                  title="link-generator"
+                  tags={["vue", "Bootstrap"]}
+                  address="http://119.23.252.8/"
+                >
+                  Decipher链接生成和记录
+                </ProjectCard>
               </div>
             </div>
           </li>
@@ -156,43 +130,32 @@ function App() {
               </div>
               <div className="flex flex-col gap-2">
                 <div className="grid grid-cols-2 gap-2">
-                  <div className="border p-4 rounded-md flex flex-col gap-1">
-                    <h2 className="text-sm font-bold">鹤壁智慧教育平台</h2>
-                    <div className="text-sm">
-                      <span className="font-bold">地址：</span>
-                      <span className="text-gray-500">
-                        https://edu.hebi.cn/
-                      </span>
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      基于Nuxt的SSR项目，主要难点是日历组件的开发
-                    </p>
-                    <div className="flex gap-2 flex-wrap">
-                      <Tag>lerna</Tag>
-                      <Tag>nuxt</Tag>
-                    </div>
-                  </div>
-                  <div className="border p-4 rounded-md flex flex-col gap-1">
-                    <h2 className="text-sm font-bold">智慧教育云</h2>
-                    <div className="text-sm">
-                      <span className="font-bold">地址：</span>
-                      <span className="text-gray-500">https://m.vxiao.cn/</span>
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      主要负责其中直播业务的内容，包括设置，报表，卡片等等
-                    </p>
-                    <div className="flex gap-2 flex-wrap">
-                      <Tag>vue</Tag>
-                      <Tag>vue-router</Tag>
-                      <Tag>vuex</Tag>
-                      <Tag>sass</Tag>
-                      <Tag>element-ui</Tag>
-                      <Tag>i18n</Tag>
-                    </div>
-                  </div>
+                  <ProjectCard
+                    title="鹤壁智慧教育平台"
+                    address="https://edu.hebi.cn/"
+                    tags={["lerna", "nuxt"]}
+                  >
+                    基于Nuxt的SSR项目，主要难点是日历组件的开发
+                  </ProjectCard>
+                  <ProjectCard
+                    title="智慧教育云"
+                    address="https://m.vxiao.cn/"
+                    tags={["vue", "vue-router", "vuex", "sass", "i18n"]}
+                  >
+                    主要负责其中直播业务的内容，包括设置，报表，卡片等等
+                  </ProjectCard>
                 </div>
-                <div className="border p-4 rounded-md flex flex-col gap-1">
-                  <h2 className="text-sm font-bold">云课堂</h2>
+                <ProjectCard
+                  title="云课堂"
+                  tags={[
+                    "vue",
+                    "vue-router",
+                    "vuex",
+                    "sass",
+                    "mpegts.js",
+                    "TRTC",
+                  ]}
+                >
                   <p className="text-sm text-gray-500">
                     云课堂主项目，主要负责重构、新功能和维护
                   </p>
@@ -202,18 +165,7 @@ function App() {
                   <p className="text-sm text-gray-500">
                     流功能主要通过 mpegts.js & TRTC 实现
                   </p>
-                  <div className="flex gap-2 flex-wrap">
-                    <Tag>lerna</Tag>
-                    <Tag>vue</Tag>
-                    <Tag>vue-router</Tag>
-                    <Tag>vuex</Tag>
-                    <Tag>sass</Tag>
-                    <Tag>canvas</Tag>
-                    <Tag>element-ui</Tag>
-                    <Tag>mpegts.js</Tag>
-                    <Tag>TRTC</Tag>
-                  </div>
-                </div>
+                </ProjectCard>
               </div>
             </div>
           </li>
