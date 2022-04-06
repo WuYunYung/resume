@@ -1,11 +1,12 @@
 import './App.css';
+import { Title } from './components'
 
 function App() {
   return (
     <div className="w-screen min-h-screen p-2 container m-auto max-w-4xl flex flex-col gap-4">
       <div className="grid grid-cols-2 gap-4">
         <div className="shadow rounded-lg p-4 flex flex-col gap-2">
-          <h1 className="text-lg font-bold">个人信息</h1>
+          <Title>个人信息</Title>
           <hr />
           <div className="flex gap-4">
             <div className="w-28 rounded overflow-hidden shadow">
@@ -30,7 +31,7 @@ function App() {
           </div>
         </div>
         <div className="shadow rounded-lg p-4 flex flex-col gap-2">
-          <h1 className="text-lg font-bold">联系方式</h1>
+          <Title>联系方式</Title>
           <hr />
           <div className="flex text-sm gap-16">
             <ul className="flex flex-col gap-2">
@@ -61,7 +62,7 @@ function App() {
         </div>
       </div>
       <div className="shadow rounded-lg p-4 flex flex-col gap-2">
-        <h1 className="text-lg font-bold">工作经历</h1>
+        <Title>工作经历</Title>
         <hr />
         <ul className="list-disc pl-6 flex flex-col gap-8">
           <li>
