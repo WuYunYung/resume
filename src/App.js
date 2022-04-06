@@ -2,7 +2,6 @@ import './App.css';
 
 function App() {
   return (
-
     <div className="w-screen min-h-screen p-2 container m-auto max-w-4xl flex flex-col gap-4">
       <div className="grid grid-cols-2 gap-4">
         <div className="shadow rounded-lg p-4 flex flex-col gap-2">
@@ -10,7 +9,7 @@ function App() {
           <hr />
           <div className="flex gap-4">
             <div className="w-28 rounded overflow-hidden shadow">
-              <img src="./wilson.jpg" alt="" />
+              <img src="https://avatars.githubusercontent.com/u/43036689?v=4" alt="" />
             </div>
             <div className="flex flex-col gap-4">
               <h2 className="flex gap-2 font-bold items-center text-md">
